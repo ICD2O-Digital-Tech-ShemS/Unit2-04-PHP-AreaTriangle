@@ -1,4 +1,4 @@
-<?php
+    <?php
 	// get the base and height from the textfields
 	$base = $_POST['base'];
 	$height = $_POST['height'];
