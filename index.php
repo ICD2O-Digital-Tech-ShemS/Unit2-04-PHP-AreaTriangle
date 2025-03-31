@@ -31,7 +31,16 @@
       <input type="text" id="height" placeholder="Enter the height (mm)" name="height"><br><br>
       <input type="submit" value="Calculate Area">
 		</form>
+    <?php
+	// get the base and height from the textfields
+	$base = $_POST['base'];
+	$height = $_POST['height'];
 
+	// This is to calculate the area
+	$area = $base * $height / 2
+?>
+<h3>Results:</h3>
+The area of the triangle is <?php echo "$area" ?>cm<sup>2</sup>.
 			<!-- iframe for the results to show on the web page. -->
 			<iframe id="results" name="results">			
 				The area of the triangle is  " + $area + cm<sup>2</sup>
